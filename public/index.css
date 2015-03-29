@@ -1,0 +1,93 @@
+.container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+		
+
+[id*="item"] {
+    width: 198px;
+    height: 200px; 
+} 		
+ .flex-item-1 {
+    border: 1px solid #01DFD7;
+     background:#FFFFFF;  
+     width: 198px;
+    height: 200px; 
+  }
+	
+.row{
+  display: -webkit-flex;
+   display: flex;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   /* Or do it all in one line with flex flow */
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   /* tweak the where items line up on the row */
+   /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
+}
+
+.square {
+  width: 198px;
+  height: 200px;
+  border: 1px solid #eee;
+  float:left;
+}
+
+.checked{
+  background-color: #2c3338;
+  color: #ea4c88;
+
+  text-align: center;
+}
+.checked::after{
+  content: "X";
+  font-size: 28pt;
+}
+@media (max-width: 700px) {
+  [id*="item"] {
+    width: 150px;
+    height: 160px; 
+}     
+ .flex-item-1 {
+    border: 1px solid #01DFD7;
+     background:#FFFFFF;  
+     width: 150px;
+    height: 160px; 
+  }
+.square {
+  width: 150px;
+  height: 160px;
+  border: 1px solid #eee;
+  float:left;
+}
+
+}
+
+@media (max-width: 490px) {
+  [id*="item"] {
+    width: 80px;
+    height: 90px; 
+}     
+ .flex-item-1 {
+    border: 1px solid #01DFD7;
+     background:#FFFFFF;  
+     width: 80px;
+    height: 90px; 
+  }
+.square {
+  width: 80px;
+  height: 90px;
+  border: 1px solid #eee;
+  float:left;
+}
+
+}
